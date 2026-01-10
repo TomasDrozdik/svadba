@@ -1,0 +1,302 @@
+/* CSS Variables for Gold & White Theme */
+:root {
+    --gold: #C9A227;
+    --gold-light: #E8D5A3;
+    --gold-dark: #A67C00;
+    --white: #FFFFFF;
+    --cream: #FDF8F0;
+    --text-dark: #4C3E29;
+    --text-light: #4C3E29;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cormorant', serif;
+    /* background-color: var(--cream); */
+    /* color: var(--text-dark); */
+    line-height: 1.6;
+    background-image:
+        url('background-sage-flowers.webp'),
+        url('background-sage-flowers-continued.webp');
+    background-size: 100% auto, 100% auto;
+    background-position: center -15vh, center 25vh;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat, repeat-y;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    background: transparent;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.pre-title {
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.couple-names {
+    font-family: 'Parisienne', cursive;
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 400;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.ampersand {
+    font-size: 0.7em;
+}
+
+.wedding-date {
+    font-family: 'Cormorant', serif;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.wedding-time {
+    font-family: 'Cormorant', serif;
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+.wedding-invitation {
+    font-family: 'Cormorant', serif;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+.wedding-venue {
+    font-family: 'Cormorant', serif;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.wedding-venue a {
+    color: var(--text-dark);
+    text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.divider-line {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.divider-icon {
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+/* Section Styles */
+.section-title {
+    font-family: 'Cormorant', serif;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.section-title a {
+    color: var(--text-dark);
+    text-decoration: underline;
+}
+
+/* Countdown - Minimalistic */
+.countdown {
+    font-family: 'Cormorant', serif;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+}
+
+.countdown-number {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 600;
+}
+
+.countdown-label {
+    font-size: 0.85rem;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: var(--text-light);
+}
+
+/* RSVP Button */
+.rsvp-container {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.rsvp-button {
+    display: inline-block;
+    padding: 14px 45px;
+    background: transparent;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 2px solid var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.rsvp-button:hover {
+    background: var(--text-dark);
+    color: var(--white);
+}
+
+/* Footer */
+.footer {
+    padding: 25px 20px;
+    background: transparent;
+    text-align: center;
+}
+
+.footer-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        background-position: center -5vh, center 20vh;
+    }
+
+    .hero {
+        padding-top: 25vh;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 25px;
+    }
+
+    .couple-names {
+        gap: 10px;
+    }
+
+    .rsvp-container {
+        padding: 20px 15px;
+    }
+
+    .divider-line {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-position: center -3vh, center 18vh;
+    }
+
+    .hero {
+        padding-top: 22vh;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+
+    .couple-names {
+        gap: 12px;
+        font-size: clamp(2.2rem, 9vw, 3.5rem);
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+
+    .countdown-number {
+        font-size: 1.3rem;
+    }
+
+    .countdown-label {
+        font-size: 0.75rem;
+    }
+
+    .wedding-date {
+        font-size: 1.4rem;
+    }
+
+    .rsvp-button {
+        padding: 12px 35px;
+        font-size: 0.85rem;
+    }
+
+    .pre-title {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+
+    .wedding-date {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+}
+
