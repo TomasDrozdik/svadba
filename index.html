@@ -11,45 +11,261 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Parisienne&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Hero Section with Names, Date & Countdown -->
-        <header class="hero">
-            <div class="hero-content">
-                <h1 class="couple-names">
-                    <span class="name">Kristína</span>
-                    <span class="ampersand">&amp;</span>
-                    <span class="name">Tomáš</span>
-                </h1>
-                <p class="wedding-invitation">Srdečne vás pozývame na našu svadbu</p>
-                <p class="wedding-date">Piatok, 22 mája 2026 o 15. hodine</p>
-                <p class="wedding-venue"><a href="https://ekorezort.sk/">Ekorezort Vendelín v Podskalí</a></p>
-                <div class="countdown" id="countdown">
-                    <span class="countdown-label">už o</span>
-                    <span class="countdown-number" id="days">000</span>
-                    <span class="countdown-label">dní</span>
-                </div>
-            </div>
-        </header>
-
-        <!-- RSVP Button -->
-        <div class="rsvp-container">
-            <a href="https://forms.gle/nYQbkQh4JxWh6dMy9"
-               class="rsvp-button"
-               target="_blank"
-               rel="noopener noreferrer">
-                Potvrďte nám svoju účasť
-            </a>
+    <!-- Side Navigation -->
+    <nav class="side-nav" id="sideNav">
+        <div class="nav-content">
+            <a href="#invitation" class="nav-link active">Pozvánka</a>
+            <a href="#schedule" class="nav-link">Harmonogram</a>
+            <a href="#gifts" class="nav-link">Darčeky</a>
+            <a href="#travel" class="nav-link">Cestovanie</a>
+            <a href="#accommodation" class="nav-link">Ubytovanie & Odvoz</a>
         </div>
+    </nav>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-divider">
-                <span class="divider-line"></span>
-                <img src="wedding-rings-favicon.svg" alt="rings" class="divider-icon">
-                <span class="divider-line"></span>
-            </div>
-            <p class="footer-text">Tešíme sa na vás!</p>
-        </footer>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="container">
+            <!-- Section 1: Invitation -->
+            <section id="invitation" class="section">
+                <header class="hero">
+                    <div class="hero-content">
+                        <h1 class="couple-names">
+                            <span class="name">Kristína</span>
+                            <span class="ampersand">&amp;</span>
+                            <span class="name">Tomáš</span>
+                        </h1>
+                        <p class="wedding-invitation">Srdečne vás pozývame na našu svadbu</p>
+                        <p class="wedding-date">Piatok, 22 mája 2026 o 15. hodine</p>
+                        <p class="wedding-venue"><a href="https://ekorezort.sk/">Ekorezort Vendelín v Podskalí</a></p>
+                        <div class="countdown" id="countdown">
+                            <span class="countdown-label">už o</span>
+                            <span class="countdown-number" id="days">000</span>
+                            <span class="countdown-label">dní</span>
+                        </div>
+                    </div>
+                </header>
+            </section>
+
+            <!-- Section 2: Schedule -->
+            <section id="schedule" class="section">
+                <div class="section-content">
+                    <div class="divider">
+                        <span class="divider-line"></span>
+                        <img src="wedding-rings-favicon.svg" alt="rings" class="divider-icon">
+                        <span class="divider-line"></span>
+                    </div>
+                    <h2 class="section-title">Harmonogram dňa</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">14:30</div>
+                            <div class="timeline-content">
+                                <h3>Príchod hostí</h3>
+                                <p>Privítame vás šampanským a malým občerstvením</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-time">15:00</div>
+                            <div class="timeline-content">
+                                <h3>Obrad</h3>
+                                <p>Slávnostný svadobný obrad</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-time">15:20</div>
+                            <div class="timeline-content">
+                                <h3>Gratulácie</h3>
+                                <p>Čas na gratulačné blahoželania novomanželom</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-time">15:40</div>
+                            <div class="timeline-content">
+                                <h3>Fotenie - všetci</h3>
+                                <p>Spoločné svadobné fotografie s hosťami</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-time">16:30</div>
+                            <div class="timeline-content">
+                                <h3>Príhovory + Svadobné menu</h3>
+                                <p>Slávnostná večera s príhovormi a prípitkami</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-time">18:00</div>
+                            <div class="timeline-content">
+                                <h3>Prvý tanec manželov + tanec s rodičmi</h3>
+                                <p>Otvorenie tanečného parketu</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-time">18:30</div>
+                            <div class="timeline-content">
+                                <h3>Fotenie - manželia</h3>
+                                <p>Profesionálne fotenie nevesty a ženícha</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-time">19:30</div>
+                            <div class="timeline-content">
+                                <h3>Krájanie torty + Káva + Topánkový kvíz</h3>
+                                <p>Slávnostné krájanie svadobnej torty a zábavný kvíz</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-time">20:00</div>
+                            <div class="timeline-content">
+                                <h3>Fotokútik</h3>
+                                <p>Zábavné fotky s rekvizitami až do 23:00</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-time">21:00</div>
+                            <div class="timeline-content">
+                                <h3>Bufet</h3>
+                                <p>Večerné občerstvenie pre všetkých hostí</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-time">23:00</div>
+                            <div class="timeline-content">
+                                <h3>Odčepčenie + Klobúkový tanec + Hádzanie kytice</h3>
+                                <p>Tradičné svadobné zvyky a zábava pokračuje</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Gifts -->
+            <section id="gifts" class="section">
+                <div class="section-content">
+                    <div class="divider">
+                        <span class="divider-line"></span>
+                        <img src="wedding-rings-favicon.svg" alt="rings" class="divider-icon">
+                        <span class="divider-line"></span>
+                    </div>
+                    <h2 class="section-title">Darčeky</h2>
+
+                    <p class="gift-text">
+                        Pokial nemate radi hotovost rovnako ako my, mozete vyuzit QR kody :-)
+                    </p>
+
+                    <div class="qr-codes">
+                        <div class="qr-code-item">
+                            <div class="qr-code-placeholder">
+                                <p>QR kód pre platbu</p>
+                                <p class="qr-label">CZK</p>
+                            </div>
+                        </div>
+
+                        <div class="qr-code-item">
+                            <div class="qr-code-placeholder">
+                                <p>QR kód pre platbu</p>
+                                <p class="qr-label">EUR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Travel -->
+            <section id="travel" class="section">
+                <div class="section-content">
+                    <div class="divider">
+                        <span class="divider-line"></span>
+                        <img src="wedding-rings-favicon.svg" alt="rings" class="divider-icon">
+                        <span class="divider-line"></span>
+                    </div>
+                    <h2 class="section-title">Cestovanie</h2>
+
+                    <div class="travel-info">
+                        <div class="info-block">
+                            <h3>Prichod autom</h3>
+                            <p>Parkovanie priamo na mieste</p>
+                            <p>(miest je dostatok)</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h3>Prichod vlakom</h3>
+                            <p><strong>Praha-Puchov 13:30</strong> Odvoz bude cakat na mieste</p>
+                            <p>Pokial s vami neratame prosim kontaktujte nas</p>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Embed -->
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.516474829307!2d19.1426!3d48.7641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47148deff73a7279%3A0x48cd9a477dce1abe!2sEkorezort%20Vendel%C3%ADn!5e0!3m2!1sen!2ssk!4v1234567890"
+                            width="100%"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Accommodation -->
+            <section id="accommodation" class="section">
+                <div class="section-content">
+                    <div class="divider">
+                        <span class="divider-line"></span>
+                        <img src="wedding-rings-favicon.svg" alt="rings" class="divider-icon">
+                        <span class="divider-line"></span>
+                    </div>
+                    <h2 class="section-title">Ubytovanie a Odvoz</h2>
+
+                    <div class="travel-info">
+                        <div class="info-block">
+                            <h3>Ubytovanie v Ekorezorte Vendelín</h3>
+                            <p>Ubytovanie je zarezervovane</p>
+                            <p><strong>Piatok</strong></p>
+                            <p>Check-in: 14:00</p>
+                            <p><strong>Sobota</strong></p>
+                            <p>Ranajky: 09:00 - 11:00</p>
+                            <p>Check-out: 11:00</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h3>Odvoz</h3>
+                            <p>Pre tych co byvate v okoli mame zabezpeceny odvoz</p>
+                            <p>TBD</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-divider">
+                    <span class="divider-line"></span>
+                    <img src="wedding-rings-favicon.svg" alt="rings" class="divider-icon">
+                    <span class="divider-line"></span>
+                </div>
+                <p class="footer-text">Tešíme sa na vás!</p>
+            </footer>
+        </div>
     </div>
 
     <script src="script.js"></script>
