@@ -341,8 +341,13 @@ body {
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.8;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     color: var(--text-dark);
+}
+
+.gift-text-ps {
+    font-style: italic;
+    font-size: 1rem;
 }
 
 .qr-codes {
@@ -350,7 +355,7 @@ body {
     justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .qr-code-item {
@@ -376,26 +381,40 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.qr-code-placeholder p {
-    font-family: 'Cormorant', serif;
-    font-size: 1.1rem;
-    color: var(--text-dark);
-    margin: 10px 0;
+.qr-code-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .qr-label {
-    font-size: 1.3rem !important;
+    font-family: 'Cormorant', serif;
+    font-size: 1.3rem;
     font-weight: 600;
-    color: var(--gold) !important;
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+.qr-note {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-top: 12px;
+    max-width: 250px;
 }
 
 /* Travel & Accommodation Styles */
-.travel-info {
+.travel-info,
+.schedule-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.schedule-info {
+    margin-top: 60px;
 }
 
 .info-block {
@@ -414,6 +433,19 @@ body {
 }
 
 .info-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.info-block ul {
+    margin: 0;
+    padding-left: 1.2em;
+    list-style: disc;
+}
+
+.info-block li {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 10px;
@@ -628,13 +660,19 @@ body {
         font-size: 1.5rem;
     }
 
-    .info-block p {
+    .info-block p,
+    .info-block li {
         font-size: 1rem;
     }
 
-    .travel-info {
+    .travel-info,
+    .schedule-info {
         grid-template-columns: 1fr;
         gap: 25px;
+    }
+
+    .schedule-info {
+        margin-top: 40px;
     }
 
     .map-container {
